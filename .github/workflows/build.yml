@@ -26,7 +26,7 @@ jobs:
         run: go mod tidy
 
       - name: Build Linux executable
-        run: GOOS=linux GOARCH=amd64 go build -o bin/Linux/datacalc main.go
+        run: GOOS=linux GOARCH=amd64 go build -o bin/Linux/datecalc main.go
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
